@@ -2,14 +2,14 @@
     "name": "Plánovač služeb",
     "short_name": "Služby",
     "description": "Aplikace pro plánování služeb zaměstnanců",
-    "start_url": "/index.html",
+    "start_url": "/planovac-sluzeb-v1/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4299e1",
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/icons/icon-72x72.png",
+            "src": "/planovac-sluzeb-v1/icons/icon-72x72.png",
             "sizes": "72x72",
             "type": "image/png",
             "purpose": "any maskable"
