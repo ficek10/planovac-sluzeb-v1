@@ -1,18 +1,18 @@
 // service-worker.js
 const CACHE_NAME = 'planovac-sluzeb-v1';
 const ASSETS_TO_CACHE = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/script.js',
-    '/modules/storage.js',
-    '/modules/employees.js',
-    '/modules/shifts.js',
-    '/modules/rules.js',
-    '/manifest.json',
-    '/icons/icon-72x72.png',
-    '/icons/icon-152x152.png',
-    '/icons/icon-192x192.png',
+    '/planovac-sluzeb-v1/',
+    '/planovac-sluzeb-v1/index.html',
+    '/planovac-sluzeb-v1/styles.css',
+    '/planovac-sluzeb-v1/script.js',
+    '/planovac-sluzeb-v1/modules/storage.js',
+    '/planovac-sluzeb-v1/modules/employees.js',
+    '/planovac-sluzeb-v1/modules/shifts.js',
+    '/planovac-sluzeb-v1/modules/rules.js',
+    '/planovac-sluzeb-v1/manifest.json',
+    '/planovac-sluzeb-v1/icons/icon-72x72.png',
+    '/planovac-sluzeb-v1/icons/icon-152x152.png',
+    '/planovac-sluzeb-v1/icons/icon-192x192.png',
     'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'
 ];
 
