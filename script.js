@@ -261,3 +261,20 @@ function validateShifts() {
         alert('Žádná porušení pravidel nebyla nalezena.');
     }
 }
+function validateShifts() {
+    const monthSelect = document.getElementById('monthSelect');
+    const yearSelect = document.getElementById('yearSelect');
+    
+    const shifts = ShiftManager.getShifts(); // Předpokládejme, že tato metoda existuje a vrací aktuální stav služeb
+    const year = yearSelect.value;
+    const month = monthSelect.value;
+
+    const violations = RulesManager.validateAll(shifts, year, month);
+    
+    // Zpracování a zobrazení porušení pravidel uživateli
+    if (violations.length > 0) {
+        alert(`Nalezena porušení pravidel:\n${violations.join('\n')}`);
+    } else {
+        alert('Žádná porušení pravidel nebyla nalezena.');
+    }
+}
