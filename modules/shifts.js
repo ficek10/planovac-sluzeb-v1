@@ -77,6 +77,27 @@ const ShiftManager = {
         await this.updateStats();
     },
 
+    // Získání aktuálního stavu služeb
+    getShifts() {
+        const shifts = {};
+        const monthSelect = document.getElementById('monthSelect');
+        const yearSelect = document.getElementById('yearSelect');
+        
+        EmployeeManager.getEmployeesList().forEach(employee => {
+            const daysInMonth = new Date(yearSelect.value, monthSelect.value, 0).getDate();
+            for (let day = 1; day <= daysInMonth; day++) {
+                const select = document.querySelector(
+                    `select[data-employee="${employee}"][data-day="${day}"]`
+                );
+                if (select) {
+                    shifts[`${employee}-${day}`] = select.value;
+                }
+            }
+        });
+
+        return shifts;
+    },
+
     // Výpočet statistik
     async updateStats() {
         const currentYear = document.getElementById('yearSelect').value;
